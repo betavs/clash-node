@@ -1,0 +1,23 @@
+{
+  "name": "clash-node",
+  "type": "module",
+  "private": true,
+  "packageManager": "pnpm@9.9.0",
+  "version": "1.0.0",
+  "main": "scripts/update.ts",
+  "scripts": {
+    "dev": "nodemon --watch scripts --exec ts-node scripts/update.ts",
+    "build": "ts-node scripts/update.ts"
+  },
+  "keywords": [
+    "clash-node"
+  ],
+  "author": "https://github.com/betavs",
+  "license": "MIT",
+  "description": "A nodejs script that automatically gets the clash subscription address and updates the clash config file.",
+  "devDependencies": {
+    "cheerio": "^1.0.0",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2"
+  }
+}
