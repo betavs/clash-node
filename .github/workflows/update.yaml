@@ -2,11 +2,13 @@ name: Update Clash Node
 
 on:
   schedule:
-    - cron: '0 */8 * * *'
+    - cron: '10 2 * * *'
 
 jobs:
   update:
     runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Shanghai
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -34,3 +36,5 @@ jobs:
           git add .
           git commit -m "Update Clash Node" || echo "No changes to commit"
           git push origin HEAD:main || echo "No changes to push"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
