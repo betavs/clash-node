@@ -1,0 +1,30 @@
+# Clash Base
+
+mixed-port: 7890
+external-controller: 127.0.0.1:9090
+allow-lan: false
+mode: rule
+log-level: warning
+
+dns:
+  enabled: true
+  nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+  fallback:
+    - 8.8.8.8
+    - 8.8.4.4
+    - tls://1.0.0.1:853
+    - tls://dns.google:853
+
+proxies:
+
+proxy-groups:
+
+rules:
+  - DOMAIN-SUFFIX,google.com,DIRECT
+  - DOMAIN-KEYWORD,google,DIRECT
+  - DOMAIN,google.com,DIRECT
+  - DOMAIN-SUFFIX,ad.com,REJECT
+  - GEOIP,CN,DIRECT
+  - MATCH,DIRECT
