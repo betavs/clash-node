@@ -2,13 +2,13 @@
 
 A nodejs script that automatically gets the clash subscription address and updates the clash config file.
 
-- [http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=a152af26777200332857941bc3c89d02](http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=a152af26777200332857941bc3c89d02)
-- [http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=b8c25aada67b311ec0783f4fba5cf216](http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=b8c25aada67b311ec0783f4fba5cf216)
-- [http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=2382457dd3a38e611ea93dd5ac035cd3](http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=2382457dd3a38e611ea93dd5ac035cd3)
-- [http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=63269d8bfbf471a5914fe452dd535139](http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=63269d8bfbf471a5914fe452dd535139)
-- [http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=a6db19544c82edf5af675a08080f326b](http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=a6db19544c82edf5af675a08080f326b)
-- [http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=d46294a44c555e7070172e96b6a9d72d](http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=d46294a44c555e7070172e96b6a9d72d)
-- [http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=9b8464568e1413aa7bdc3b93270b806f](http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=9b8464568e1413aa7bdc3b93270b806f)
-- [http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=29fc4d36256dd36d3c32beb74af2298f](http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=29fc4d36256dd36d3c32beb74af2298f)
-- [http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=cda2295675b4630e79b861c73a30669b](http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=cda2295675b4630e79b861c73a30669b)
-- [http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=25ddfc066429a274aa793a275e472f89](http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=25ddfc066429a274aa793a275e472f89)
+- [http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=2090a6cc63c4d9e998f30251edfd0858](http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=2090a6cc63c4d9e998f30251edfd0858)
+- [http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=8ff773412e2dd657925bd908c6cb7fdc](http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=8ff773412e2dd657925bd908c6cb7fdc)
+- [http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=620d04eea6be56604fe4652aed60f901](http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=620d04eea6be56604fe4652aed60f901)
+- [http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=4b3d1e6c3475cb94208eb5bb7153fa93](http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=4b3d1e6c3475cb94208eb5bb7153fa93)
+- [http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=5afdee5ddbee0b46629690fea1d5ae32](http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=5afdee5ddbee0b46629690fea1d5ae32)
+- [http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=1596a0bdcacb8ec9d387f41013be222b](http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=1596a0bdcacb8ec9d387f41013be222b)
+- [http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=907550cba10a94980063bb645ff6c0e5](http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=907550cba10a94980063bb645ff6c0e5)
+- [http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=6d2780d7a1c665281a207618d26c5eb0](http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=6d2780d7a1c665281a207618d26c5eb0)
+- [http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=bc767cd94aecfe41b78c80bd8dcc060d](http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=bc767cd94aecfe41b78c80bd8dcc060d)
+- [http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=7c69b01d4a8d9153287a1c44090b6536](http://subxfxssr.xfxvpn.me/api/v1/client/subscribe?token=7c69b01d4a8d9153287a1c44090b6536)
