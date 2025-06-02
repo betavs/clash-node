@@ -6,16 +6,19 @@
   "version": "1.0.0",
   "main": "scripts/update.ts",
   "scripts": {
-    "dev": "nodemon --watch scripts --exec ts-node scripts/update.ts",
+    "dev": "nodemon --watch . --ext ts --exec ts-node scripts/update.ts",
     "build": "ts-node scripts/update.ts"
   },
   "keywords": [
     "clash-node"
   ],
   "author": "https://github.com/betavs",
+  "homepage": "https://betavs.github.io/clash-node/",
   "license": "MIT",
   "description": "A nodejs script that automatically gets the clash subscription address and updates the clash config file.",
   "devDependencies": {
+    "@types/node": "^22.15.29",
+    "chalk": "^5.4.1",
     "cheerio": "^1.0.0",
     "nodemon": "^3.1.10",
     "ts-node": "^10.9.2",
