@@ -2,6 +2,8 @@
 
 A nodejs script that automatically gets the clash subscription address and updates the clash config file.
 
+> Updated on Tue, 03 Jun 2025 02:35:28 GMT
+
 | No. | Subscribe Link |
 | :---: | :-----: |
 | 1 | [clash-meta.yaml](https://betavs.github.io/clash-node/resources/clash-meta.yaml) |
