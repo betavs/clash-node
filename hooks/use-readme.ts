@@ -1,6 +1,6 @@
 import chalk from 'chalk'
 import { readdirSync, writeFileSync } from 'node:fs'
-import config from './use-config.ts'
+import config from '../scripts/config.ts'
 
 const { name, description, homepage, predicate } = config
 
@@ -10,6 +10,7 @@ let readme = `# ${name}\n\n${description}\n\n`
 
 const useReadme = () => {
   const names = readdirSync('resources').filter(predicate)
+
   const nodes = names
     .map((name, index) => {
       return `| ${index + 1} | [${name}](${homepage}resources/${name}) |`

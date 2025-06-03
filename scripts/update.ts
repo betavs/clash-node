@@ -1,7 +1,7 @@
 import chalk from 'chalk'
-import config from '../hooks/use-config.ts'
 import useGenerate from '../hooks/use-generate.ts'
 import useReadme from '../hooks/use-readme.ts'
+import config from './config.ts'
 
 import { readdirSync } from 'node:fs'
 
