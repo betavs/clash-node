@@ -1,11 +1,13 @@
 import { readFileSync } from 'node:fs'
 
-const useConfig = () => {
-  const content = readFileSync('package.json', 'utf-8')
-  const json = JSON.parse(content)
-  const { name, author, description, homepage } = json
+const pattern = /^clash-[\w-]+\.(ts|yaml)$/
 
-  return { name, author, description, homepage }
-}
+const predicate = (str: string) => pattern.test(str)
 
-export default useConfig()
+const content = readFileSync('package.json', 'utf-8')
+
+const json = JSON.parse(content)
+
+const { name, author, description, homepage } = json
+
+export default { name, author, description, homepage, predicate }
