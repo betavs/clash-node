@@ -6,6 +6,8 @@ const pattern = /^clash-[\w-]+\.yaml$/
 
 const { name, description, homepage } = useConfig
 
+const date = new Date().toUTCString()
+
 let readme = `# ${name}\n\n${description}\n\n`
 
 const useReadme = () => {
@@ -16,12 +18,12 @@ const useReadme = () => {
     })
     .join('\n')
 
-  readme += `| No. | Subscribe Link |\n| :---: | :-----: |\n${nodes}\n`
+  readme += `> Updated on ${date}\n\n| No. | Subscribe Link |\n| :---: | :-----: |\n${nodes}\n`
 
   writeFileSync('README.md', readme, 'utf-8')
 
   const message = chalk.cyanBright.italic.underline(
-    `\n${new Date().toUTCString()}: Enjoy your Clash configuration!\n`
+    `\n${date}: Enjoy your Clash configuration!\n`
   )
 
   console.log(message)
