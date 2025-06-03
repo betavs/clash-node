@@ -1,10 +1,11 @@
 import chalk from 'chalk'
 import { readFileSync, writeFileSync } from 'node:fs'
 import { parse, stringify } from 'yaml'
-import config from './use-config.ts'
+import config from '../scripts/config.ts'
 
 const useGenerate = (option: ClashNode.UseGenerateOption) => {
   const yaml = parse(readFileSync('resources/config.yaml', 'utf-8'))
+
   const rules = parse(readFileSync('resources/rules.yaml', 'utf-8'))
 
   Object.keys(option).forEach((filename) => {
@@ -21,6 +22,7 @@ const useGenerate = (option: ClashNode.UseGenerateOption) => {
     }
 
     const names = data.map((item) => item.name)
+
     const groups = [
       {
         name: 'PROXY',
@@ -38,7 +40,9 @@ const useGenerate = (option: ClashNode.UseGenerateOption) => {
     ]
 
     yaml.proxies = data
+
     yaml['proxy-groups'] = groups
+
     yaml.rules = rules
 
     writeFileSync(

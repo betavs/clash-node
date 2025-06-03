@@ -1,22 +1,31 @@
-const useDecode = (encode: string): ClashNode.ProxyNodeArray => {
-  const text = Buffer.from(encode, 'base64').toString('utf-8')
+import config from '../scripts/config.ts'
+
+const useDecodeBase64 = (encode: string) => {
+  return Buffer.from(encode, 'base64').toString('utf-8')
+}
+
+const useDecodeBase64url = (encode: string) => {
+  return Buffer.from(encode, 'base64url').toString('utf-8')
+}
+
+const useDecodeClashNode = (encode: string): ClashNode.ProxyNodeArray => {
+  const text = useDecodeBase64(encode)
+
   const data = text
     .split('\n')
     .map((item) => item.trim())
     .filter((item) => item)
 
-  const pattern = /^(\w+):\/\/(\w+)@([\w\.-]+):(\d+)#(.+)$/
   const proxies: ClashNode.ProxyNodeArray = []
 
   data.forEach((item) => {
-    const match = decodeURIComponent(item).match(pattern)
+    const match = decodeURIComponent(item).match(config.pattern.decode)
 
     if (!match) return
 
     const [, type, secret, server, port, name] = match
-    const [cipher, password] = Buffer.from(secret, 'base64')
-      .toString('utf-8')
-      .split(':')
+
+    const [cipher, password] = useDecodeBase64(secret).split(':')
 
     proxies.push({
       name,
@@ -32,8 +41,4 @@ const useDecode = (encode: string): ClashNode.ProxyNodeArray => {
   return proxies
 }
 
-const useDecodeBase64url = (encode: string) => {
-  return Buffer.from(encode, 'base64url').toString('utf-8')
-}
-
-export { useDecode, useDecodeBase64url }
+export { useDecodeBase64url, useDecodeClashNode }

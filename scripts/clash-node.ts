@@ -1,4 +1,4 @@
-import { useDecode } from '../hooks/use-decode.ts'
+import { useDecodeClashNode } from '../hooks/use-decode.ts'
 import useFilename from '../hooks/use-filename.ts'
 import useSpider from '../hooks/use-spider.ts'
 
@@ -20,7 +20,8 @@ const main = async () => {
     pattern
   })
 
-  result[filename] = useDecode(encode)
+  result[filename] = useDecodeClashNode(encode)
+
   return result
 }
 

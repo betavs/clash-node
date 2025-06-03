@@ -4,16 +4,16 @@ import useSpider from '../hooks/use-spider.ts'
 
 const filename = useFilename(import.meta.url)
 
-const base64url = 'aHR0cHM6Ly9ub2RlZnJlZS5uZXQv'
+const base64url = 'aHR0cHM6Ly9mcmVlLmRhdGl5YS5jb20v'
 
-const pattern = /http(s)?:\/\/\w+\.\w+\.\w+\/(\w+\/)+\w+\.yaml/
+const pattern = /http(s)?:\/\/\w+\.\w+\.\w+\/(\w+\/)+[\w-]+\.yaml/
 
 const result: ClashNode.UseGenerateOption = { [filename]: [] }
 
 const main = async () => {
   const yaml = await useSpider({
     base64url,
-    selector: ['#boxmoe_theme_container a', '#boxmoe_theme_container .section'],
+    selector: ['.relative a.link', '.nested-links code'],
     pattern
   })
 

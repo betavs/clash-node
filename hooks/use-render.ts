@@ -1,18 +1,12 @@
 import * as cheerio from 'cheerio'
+import config from '../scripts/config.ts'
 import { useDecodeBase64url } from './use-decode.ts'
 
-const pattern = /^http(s)?:/
-
-const useLink = (url: string) => {
-  if (pattern.test(url)) {
-    return url
-  }
-
-  return undefined
-}
-
 const useRender = async (url: string) => {
-  const response = await fetch(useLink(url) ?? useDecodeBase64url(url))
+  const link = config.pattern.link.test(url) ? url : useDecodeBase64url(url)
+
+  const response = await fetch(link)
+
   const text = await response.text()
 
   return cheerio.load(text)

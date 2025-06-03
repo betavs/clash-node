@@ -10,6 +10,7 @@ const result: ClashNode.UseGenerateOption = { [filename]: [] }
 
 const main = async () => {
   const data = await useRender(base64url)
+
   const { proxies } = parse(data.text())
 
   result[filename] = proxies
