@@ -14,4 +14,10 @@ declare namespace ClashNode {
   type ProxyNodeArray = ProxyNode[]
 
   type UseGenerateOption = Record<string, ProxyNodeArray>
+
+  type UseSpiderOption = {
+    base64url: string
+    selector: [string, string]
+    pattern: RegExp
+  }
 }

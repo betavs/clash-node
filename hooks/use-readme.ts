@@ -1,17 +1,15 @@
 import chalk from 'chalk'
 import { readdirSync, writeFileSync } from 'node:fs'
-import useConfig from './use-config.ts'
+import config from './use-config.ts'
 
-const pattern = /^clash-[\w-]+\.yaml$/
-
-const { name, description, homepage } = useConfig
+const { name, description, homepage, predicate } = config
 
 const date = new Date().toUTCString()
 
 let readme = `# ${name}\n\n${description}\n\n`
 
 const useReadme = () => {
-  const names = readdirSync('resources').filter((name) => pattern.test(name))
+  const names = readdirSync('resources').filter(predicate)
   const nodes = names
     .map((name, index) => {
       return `| ${index + 1} | [${name}](${homepage}resources/${name}) |`
