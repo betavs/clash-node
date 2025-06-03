@@ -16,441 +16,320 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - name: 节点日期：06-03
-    server: ti3hyra4.slashdevslashnetslashtun.net
-    port: 18008
-    type: ss
-    cipher: aes-256-gcm
-    password: 6EZ5QKFX60AVSUYT
-  - name: 日本【机场推荐：https://socks.news】48
-    server: 103.116.7.248
+  - name: 🇨🇳_CN_中国->🇫🇷_FR_法国
+    type: trojan
+    server: 36.151.251.61
+    port: 33097
+    password: RlzoEILU
+    sni: 36.151.251.61
+    skip-cert-verify: true
+    ip-version: dual
+    udp: true
+  - name: 🇺🇸_US_美国_1
+    type: trojan
+    server: 104.21.35.247
     port: 443
+    network: ws
+    password: c8eac4b7-95ba-4ce0-920d-c3279eb3b391
+    sni: ff.HuangSHANg2030.DPDnS.oRg
+    ws-opts:
+      path: /ptGwaGzcA4KNAXX
+      headers:
+        host: ff.huangshang2030.dpdns.org
+    ip-version: dual
+    udp: true
+  - name: 🇺🇸_US_美国_2
     type: trojan
-    password: Aimer
-    sni: epme.ambercc.filegear-sg.me
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: epme.ambercc.filegear-sg.me
-  - name: 中国【机场推荐：https://socks.news】41
-    server: 120.232.153.41
-    port: 41491
-    type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    tls: false
-  - name: 中国【机场推荐：https://socks.news】53
-    server: 8tv68qhq.slashdevslashnetslashtun.net
-    port: 15010
-    type: ss
-    cipher: aes-256-gcm
-    password: ENYGONDU94UW1G6X
-  - name: 中国【机场推荐：https://socks.news】15
-    server: 120.198.44.126
-    port: 47883
-    type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    tls: false
-  - name: 中国【机场推荐：https://socks.news】6
-    server: 183.236.51.38
-    port: 59652
-    type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    tls: false
-  - name: 中国【机场推荐：https://socks.news】37
-    server: 183.238.90.8
-    port: 41766
-    type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    tls: false
-  - name: 斯洛文尼亚【机场推荐：https://socks.news】13
-    server: 92.53.190.161
-    port: 2087
-    type: trojan
-    password: Aimer
-    sni: epme.ambercc.filegear-sg.me
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: epme.ambercc.filegear-sg.me
-  - name: 中国【机场推荐：https://socks.news】29
-    server: b79d3418-sux8g0-swe4j1-1rfon.cm5.p5pv.com
-    port: 17232
-    type: vmess
-    uuid: aed1cc24-351d-11ef-ba52-f23c9164ca5d
-    alterId: 0
-    cipher: auto
-    tls: false
-  - name: 美国【机场推荐：https://socks.news】9
-    server: cs.flha.ru
-    port: 2082
-    type: vmess
-    uuid: 2f821152-c3e9-4074-9185-2790e7425f42
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: cs.flha.ru
-  - name: 中国【机场推荐：https://socks.news】45
-    server: 81f6bf37-sutj40-svgpxu-y2gs.cm5.p5pv.com
-    port: 17233
-    type: vmess
-    uuid: b806b388-5f97-11ee-8014-f23c913c8d2b
-    alterId: 0
-    cipher: auto
-    tls: false
-  - name: 日本【机场推荐：https://socks.news】36
-    server: 103.116.7.103
-    port: 2083
-    type: trojan
-    password: Aimer
-    sni: epme.ambercc.filegear-sg.me
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: epme.ambercc.filegear-sg.me
-  - name: 美国【机场推荐：https://socks.news】5
     server: 94.131.20.3
     port: 443
-    type: trojan
     password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
-    sni: nacho-rerun-crepe.stark-industries.solutions
-  - name: 中国【机场推荐：https://socks.news】57
-    server: 120.198.71.216
-    port: 46159
+    sni: chop-wrist-bud.stark-industries.solutions
+    ip-version: dual
+    udp: true
+  - name: 🇮🇷_IR_伊朗->🇺🇸_US_美国
     type: vmess
+    server: 178.22.121.98
+    port: 1091
+    uuid: 6ef3b433-eea7-4e5d-95a5-c5f742ce2fb7
+    network: tcp
+    sni: ""
+    fingerprint: ""
+    ip-version: dual
+    udp: true
+    alterId: 0
+    cipher: aes-128-gcm
+  - name: 🇺🇸_US_美国->🇨🇳_CN_中国
+    type: vmess
+    server: 142.4.119.72
+    port: 57118
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    network: tcp
+    sni: ""
+    skip-cert-verify: true
+    fingerprint: ""
+    ip-version: dual
+    udp: true
     alterId: 0
     cipher: auto
-    tls: false
-  - name: 中国【机场推荐：https://socks.news】18
-    server: 183.236.51.38
-    port: 30052
-    type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    tls: false
-  - name: 中国【机场推荐：https://socks.news】7
-    server: 120.198.71.216
-    port: 35921
-    type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    tls: false
-  - name: 未知【机场推荐：https://socks.news】16
-    server: cache-giver-wife.stark-industries.solutions
-    port: 443
+  - name: 🇺🇸_US_美国->🇫🇷_FR_法国_1
     type: trojan
-    password: e6a2e741-0fce-440b-910c-b81325e2263a
-  - name: 未知【机场推荐：https://socks.news】27
-    server: strut-brisk-scope.stark-industries.solutions
-    port: 443
-    type: trojan
-    password: e6a2e741-0fce-440b-910c-b81325e2263a
-    sni: strut-brisk-scope.stark-industries.solutions
-  - name: 未知【机场推荐：https://socks.news】26
-    server: guy-trace-lyric.stark-industries.solutions
-    port: 443
-    type: trojan
-    password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
-  - name: 未知【机场推荐：https://socks.news】22
-    server: bring-glove-shine.stark-industries.solutions
-    port: 443
-    type: trojan
-    password: e6a2e741-0fce-440b-910c-b81325e2263a
-    sni: bring-glove-shine.stark-industries.solutions
-  - name: 中国【机场推荐：https://socks.news】52
-    server: 8tv68qhq.slashdevslashnetslashtun.net
-    port: 15008
-    type: ss
-    cipher: aes-256-gcm
-    password: 0S43J3FD6L7IEKGQ
-  - name: 中国【机场推荐：https://socks.news】24
-    server: 120.234.102.229
-    port: 49174
-    type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    tls: false
-  - name: 美国【机场推荐：https://socks.news】28
     server: 172.67.133.248
     port: 443
-    type: trojan
+    network: ws
     password: f0f6e76e-e5fe-4e2c-9faf-34832e021eae
     sni: DDd.890604.FIlEGear-sG.Me
-    network: ws
     ws-opts:
       path: /mZr1mA5hub7QHHkQBzYO
       headers:
-        Host: DDd.890604.FIlEGear-sG.Me
-  - name: 中国【机场推荐：https://socks.news】3
-    server: 183.236.51.38
-    port: 49302
-    type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    tls: false
-  - name: 中国【机场推荐：https://socks.news】30
-    server: 120.232.153.40
-    port: 43292
-    type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    tls: false
-  - name: 伊朗【机场推荐：https://socks.news】46
-    server: 178.22.121.98
-    port: 1091
-    type: vmess
-    uuid: 6ef3b433-eea7-4e5d-95a5-c5f742ce2fb7
-    alterId: 0
-    cipher: auto
-    tls: false
-  - name: 未知【机场推荐：https://socks.news】2
-    server: chop-wrist-bud.stark-industries.solutions
-    port: 443
+        host: ddd.890604.filegear-sg.me
+    ip-version: dual
+    udp: true
+  - name: 🇺🇸_US_美国_3
     type: trojan
-    password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
-    sni: chop-wrist-bud.stark-industries.solutions
-  - name: 日本【机场推荐：https://socks.news】19
-    server: arxfw2b78fi2q9hzylhn.freesocks.work
+    server: 172.67.144.126
     port: 443
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: Nk9asglDzHzjktVzTkvhaA
-  - name: 中国【机场推荐：https://socks.news】21
-    server: 183.237.84.53
-    port: 55002
-    type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    tls: false
-  - name: 中国【机场推荐：https://socks.news】34
-    server: 120.232.153.40
-    port: 31209
-    type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    tls: false
-  - name: 未知【机场推荐：https://socks.news】10
-    server: bats-paper-chump.stark-industries.solutions
-    port: 443
+    network: ws
+    password: 895552fa-6284-4c1d-ba00-3944e0c7c626
+    sni: CFR56ty7890.288288.sHOP
+    ws-opts:
+      path: /By7cEmOrNRS58yeduy9AOG
+      headers:
+        host: cfr56ty7890.288288.shop
+    ip-version: dual
+    udp: true
+  - name: 🇺🇸_US_美国_4
     type: trojan
+    server: 104.21.71.112
+    port: 443
+    network: ws
+    password: 895552fa-6284-4c1d-ba00-3944e0c7c626
+    sni: CFR56ty7890.288288.sHOP
+    ws-opts:
+      path: /By7cEmOrNRS58yeduy9AOG
+      headers:
+        host: cfr56ty7890.288288.shop
+    ip-version: dual
+    udp: true
+  - name: 🇲🇩_MD_摩尔多瓦->🇺🇸_US_美国
+    type: trojan
+    server: 45.67.229.222
+    port: 443
+    network: tcp
+    password: 0fc9c5ff-9531-4178-966f-7d958e1df64b
+    sni: morse-stank-most.stark-industries.solutions
+    ip-version: dual
+    udp: true
+  - name: 未知_1
+    type: trojan
+    server: bring-glove-shine.stark-industries.solutions
+    port: 443
+    network: tcp
     password: e6a2e741-0fce-440b-910c-b81325e2263a
-    sni: bats-paper-chump.stark-industries.solutions
-  - name: 中国【机场推荐：https://socks.news】4
-    server: 183.236.51.38
-    port: 41024
-    type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    tls: false
-  - name: 中国【机场推荐：https://socks.news】32
-    server: 183.232.235.2
-    port: 8313
+    sni: bring-glove-shine.stark-industries.solutions
+    ip-version: dual
+    udp: true
+  - name: 🇺🇸_US_美国_5
     type: trojan
-    password: 2c605663-b89a-5734-a9d6-97d4743d72cf
-    sni: hk-13-568.flztjc.net
-  - name: 中国【机场推荐：https://socks.news】8
-    server: 120.198.71.219
-    port: 51095
-    type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    tls: false
-  - name: 中国【机场推荐：https://socks.news】43
-    server: 8tv68qhq.slashdevslashnetslashtun.net
-    port: 15003
-    type: ss
-    cipher: aes-256-gcm
-    password: 4KGHWKCKQAJOVPHO
-  - name: 中国【机场推荐：https://socks.news】51
-    server: 183.236.51.38
-    port: 33919
-    type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    tls: false
-  - name: 美国【机场推荐：https://socks.news】50
+    server: 141.193.213.94
+    port: 443
+    network: ws
+    password: 4c57a4f7-e137-4e0d-97c0-2f06bbcd2f2e
+    sni: ustrorxur6vt79grpe.jjjiedian6j4tblb.com
+    ws-opts:
+      path: /images
+      headers:
+        host: ustrorxur6vt79grpe.jjjiedian6j4tblb.com
+    ip-version: dual
+    udp: true
+  - name: 🇺🇸_US_美国_6
+    type: trojan
     server: 172.67.135.37
     port: 443
-    type: trojan
+    network: ws
     password: 44ed7a37-af89-4cd1-8680-83a7207810d9
     sni: cCtv4.459.pp.uA
-    network: ws
     ws-opts:
       path: /HpYP4foAlpTKtfYnjLYhU30U
       headers:
-        Host: cCtv4.459.pp.uA
-  - name: 中国【机场推荐：https://socks.news】17
-    server: vt-bana2-cn-11.ghpgwqswodgzv.com
-    port: 40021
-    type: trojan
-    password: a38c9e28-9960-4e31-9f18-ed2495a756aa
-    sni: vt-bana2-cn-11.ghpgwqswodgzv.com
+        host: cctv4.459.pp.ua
+    ip-version: dual
+    udp: true
+  - name: 🇨🇳_CN_中国
+    type: vmess
+    server: v29.heduian.link
+    port: 30829
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
     network: ws
     ws-opts:
-      path: /dl_media
+      path: /oooo
       headers:
-        Host: vt-bana2-cn-11.ghpgwqswodgzv.com
-  - name: 中国【机场推荐：https://socks.news】49
-    server: 183.238.90.8
-    port: 46920
-    type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
+        host: ocbc.com
+    ip-version: dual
+    udp: true
+    alterId: 2
     cipher: auto
-    tls: false
-  - name: 俄罗斯【机场推荐：https://socks.news】47
-    server: 5.182.84.244
+  - name: 🇨🇳_CN_中国->🇨🇦_CA_加拿大
+    type: vmess
+    server: v8.heduian.link
+    port: 30808
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    network: ws
+    ws-opts:
+      path: /oooo
+      headers:
+        host: v8.heduian.link
+    ip-version: dual
+    udp: true
+    alterId: 2
+    cipher: auto
+  - name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
+    type: trojan
+    server: 36.151.251.62
+    port: 13542
+    password: RlzoEILU
+    sni: cdn.egvra.cn
+    skip-cert-verify: true
+    ip-version: dual
+    udp: true
+  - name: 未知_2
+    type: trojan
+    server: cache-giver-wife.stark-industries.solutions
     port: 443
+    password: e6a2e741-0fce-440b-910c-b81325e2263a
+    sni: cache-giver-wife.stark-industries.solutions
+    ip-version: dual
+    udp: true
+  - name: 🇺🇸_US_美国_7
     type: trojan
-    password: Aimer
-    sni: epme.ambercc.filegear-sg.me
+    server: 104.21.15.232
+    port: 443
     network: ws
+    password: 15b24b56-d667-4fa8-b548-f3dc942fb461
+    sni: ab2c7f0b-bf1b-4eb3-9884-256f4de3d.2030.pp.ua
     ws-opts:
-      path: /
-      headers:
-        Host: epme.ambercc.filegear-sg.me
-  - name: 中国【机场推荐：https://socks.news】12
-    server: dozo01.flztjc.top
-    port: 8313
+      path: /4p35eUnmGxQ8YJFJxz
+    ip-version: dual
+    udp: true
+  - name: 🇳🇱_NL_荷兰
     type: trojan
-    password: 2c605663-b89a-5734-a9d6-97d4743d72cf
-    sni: hk-13-568.flztjc.net
-  - name: 中国【机场推荐：https://socks.news】11
-    server: 183.238.90.8
-    port: 39076
-    type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    tls: false
-  - name: 中国【机场推荐：https://socks.news】33
-    server: 120.232.153.40
-    port: 50152
-    type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    tls: false
+    server: 45.159.251.33
+    port: 443
+    network: tcp
+    password: 0fc9c5ff-9531-4178-966f-7d958e1df64b
+    sni: eats-rigor-judge.stark-industries.solutions
+    ip-version: dual
+    udp: true
+  - name: 🇨🇳_CN_中国->🇩🇪_DE_德国
+    type: trojan
+    server: 120.233.44.201
+    port: 21102
+    password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+    sni: 120.233.44.201
+    skip-cert-verify: true
+    ip-version: dual
+    udp: true
+  - name: 未知_3
+    type: trojan
+    server: chop-wrist-bud.stark-industries.solutions
+    port: 443
+    password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
+    sni: chop-wrist-bud.stark-industries.solutions
+    ip-version: dual
+    udp: true
+  - name: 🇺🇸_US_美国->🇫🇷_FR_法国_2
+    type: trojan
+    server: 104.21.25.95
+    port: 443
+    network: ws
+    password: f0f6e76e-e5fe-4e2c-9faf-34832e021eae
+    sni: DDd.890604.FIlEGear-sG.Me
+    skip-cert-verify: true
+    ws-opts:
+      path: /mZr1mA5hub7QHHkQBzYO
+    ip-version: dual
+    udp: true
+  - name: 未知_4
+    type: trojan
+    server: strut-brisk-scope.stark-industries.solutions
+    port: 443
+    network: tcp
+    password: e6a2e741-0fce-440b-910c-b81325e2263a
+    sni: strut-brisk-scope.stark-industries.solutions
+    ip-version: dual
+    udp: true
+  - name: 未知_5
+    type: trojan
+    server: guy-trace-lyric.stark-industries.solutions
+    port: 443
+    password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
+    ip-version: dual
+    udp: true
+  - name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
+    type: trojan
+    server: 36.151.251.62
+    port: 3330
+    password: RlzoEILU
+    sni: cdn.egvra.cn
+    skip-cert-verify: true
+    ip-version: dual
+    udp: true
 proxy-groups:
   - name: PROXY
     type: select
     proxies:
       - CLASH
-      - 节点日期：06-03
-      - 日本【机场推荐：https://socks.news】48
-      - 中国【机场推荐：https://socks.news】41
-      - 中国【机场推荐：https://socks.news】53
-      - 中国【机场推荐：https://socks.news】15
-      - 中国【机场推荐：https://socks.news】6
-      - 中国【机场推荐：https://socks.news】37
-      - 斯洛文尼亚【机场推荐：https://socks.news】13
-      - 中国【机场推荐：https://socks.news】29
-      - 美国【机场推荐：https://socks.news】9
-      - 中国【机场推荐：https://socks.news】45
-      - 日本【机场推荐：https://socks.news】36
-      - 美国【机场推荐：https://socks.news】5
-      - 中国【机场推荐：https://socks.news】57
-      - 中国【机场推荐：https://socks.news】18
-      - 中国【机场推荐：https://socks.news】7
-      - 未知【机场推荐：https://socks.news】16
-      - 未知【机场推荐：https://socks.news】27
-      - 未知【机场推荐：https://socks.news】26
-      - 未知【机场推荐：https://socks.news】22
-      - 中国【机场推荐：https://socks.news】52
-      - 中国【机场推荐：https://socks.news】24
-      - 美国【机场推荐：https://socks.news】28
-      - 中国【机场推荐：https://socks.news】3
-      - 中国【机场推荐：https://socks.news】30
-      - 伊朗【机场推荐：https://socks.news】46
-      - 未知【机场推荐：https://socks.news】2
-      - 日本【机场推荐：https://socks.news】19
-      - 中国【机场推荐：https://socks.news】21
-      - 中国【机场推荐：https://socks.news】34
-      - 未知【机场推荐：https://socks.news】10
-      - 中国【机场推荐：https://socks.news】4
-      - 中国【机场推荐：https://socks.news】32
-      - 中国【机场推荐：https://socks.news】8
-      - 中国【机场推荐：https://socks.news】43
-      - 中国【机场推荐：https://socks.news】51
-      - 美国【机场推荐：https://socks.news】50
-      - 中国【机场推荐：https://socks.news】17
-      - 中国【机场推荐：https://socks.news】49
-      - 俄罗斯【机场推荐：https://socks.news】47
-      - 中国【机场推荐：https://socks.news】12
-      - 中国【机场推荐：https://socks.news】11
-      - 中国【机场推荐：https://socks.news】33
+      - 🇨🇳_CN_中国->🇫🇷_FR_法国
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇮🇷_IR_伊朗->🇺🇸_US_美国
+      - 🇺🇸_US_美国->🇨🇳_CN_中国
+      - 🇺🇸_US_美国->🇫🇷_FR_法国_1
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
+      - 🇲🇩_MD_摩尔多瓦->🇺🇸_US_美国
+      - 未知_1
+      - 🇺🇸_US_美国_5
+      - 🇺🇸_US_美国_6
+      - 🇨🇳_CN_中国
+      - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+      - 未知_2
+      - 🇺🇸_US_美国_7
+      - 🇳🇱_NL_荷兰
+      - 🇨🇳_CN_中国->🇩🇪_DE_德国
+      - 未知_3
+      - 🇺🇸_US_美国->🇫🇷_FR_法国_2
+      - 未知_4
+      - 未知_5
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
   - name: CLASH
     type: url-test
     url: http://www.gstatic.com/generate_204
     proxies:
-      - 节点日期：06-03
-      - 日本【机场推荐：https://socks.news】48
-      - 中国【机场推荐：https://socks.news】41
-      - 中国【机场推荐：https://socks.news】53
-      - 中国【机场推荐：https://socks.news】15
-      - 中国【机场推荐：https://socks.news】6
-      - 中国【机场推荐：https://socks.news】37
-      - 斯洛文尼亚【机场推荐：https://socks.news】13
-      - 中国【机场推荐：https://socks.news】29
-      - 美国【机场推荐：https://socks.news】9
-      - 中国【机场推荐：https://socks.news】45
-      - 日本【机场推荐：https://socks.news】36
-      - 美国【机场推荐：https://socks.news】5
-      - 中国【机场推荐：https://socks.news】57
-      - 中国【机场推荐：https://socks.news】18
-      - 中国【机场推荐：https://socks.news】7
-      - 未知【机场推荐：https://socks.news】16
-      - 未知【机场推荐：https://socks.news】27
-      - 未知【机场推荐：https://socks.news】26
-      - 未知【机场推荐：https://socks.news】22
-      - 中国【机场推荐：https://socks.news】52
-      - 中国【机场推荐：https://socks.news】24
-      - 美国【机场推荐：https://socks.news】28
-      - 中国【机场推荐：https://socks.news】3
-      - 中国【机场推荐：https://socks.news】30
-      - 伊朗【机场推荐：https://socks.news】46
-      - 未知【机场推荐：https://socks.news】2
-      - 日本【机场推荐：https://socks.news】19
-      - 中国【机场推荐：https://socks.news】21
-      - 中国【机场推荐：https://socks.news】34
-      - 未知【机场推荐：https://socks.news】10
-      - 中国【机场推荐：https://socks.news】4
-      - 中国【机场推荐：https://socks.news】32
-      - 中国【机场推荐：https://socks.news】8
-      - 中国【机场推荐：https://socks.news】43
-      - 中国【机场推荐：https://socks.news】51
-      - 美国【机场推荐：https://socks.news】50
-      - 中国【机场推荐：https://socks.news】17
-      - 中国【机场推荐：https://socks.news】49
-      - 俄罗斯【机场推荐：https://socks.news】47
-      - 中国【机场推荐：https://socks.news】12
-      - 中国【机场推荐：https://socks.news】11
-      - 中国【机场推荐：https://socks.news】33
+      - 🇨🇳_CN_中国->🇫🇷_FR_法国
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇮🇷_IR_伊朗->🇺🇸_US_美国
+      - 🇺🇸_US_美国->🇨🇳_CN_中国
+      - 🇺🇸_US_美国->🇫🇷_FR_法国_1
+      - 🇺🇸_US_美国_3
+      - 🇺🇸_US_美国_4
+      - 🇲🇩_MD_摩尔多瓦->🇺🇸_US_美国
+      - 未知_1
+      - 🇺🇸_US_美国_5
+      - 🇺🇸_US_美国_6
+      - 🇨🇳_CN_中国
+      - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+      - 未知_2
+      - 🇺🇸_US_美国_7
+      - 🇳🇱_NL_荷兰
+      - 🇨🇳_CN_中国->🇩🇪_DE_德国
+      - 未知_3
+      - 🇺🇸_US_美国->🇫🇷_FR_法国_2
+      - 未知_4
+      - 未知_5
+      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
     interval: 300
     tolerance: 50
 rules:
