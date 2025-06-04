@@ -21,140 +21,140 @@ proxies:
     server: gya.tangu.win
     port: 15627
     cipher: chacha20-ietf-poly1305
-    password: 20789ae4-816f-4f33-a705-c246699abea5
+    password: cde935af-2aff-427a-b10f-bc84ace7ab4f
     udp: true
   - name: 美国02专线
     type: ss
     server: zf-ct.bgblwow.org
     port: 16628
     cipher: chacha20-ietf-poly1305
-    password: 20789ae4-816f-4f33-a705-c246699abea5
+    password: cde935af-2aff-427a-b10f-bc84ace7ab4f
     udp: true
   - name: 香港01
     type: ss
     server: gya.tangu.win
     port: 19630
     cipher: chacha20-ietf-poly1305
-    password: 20789ae4-816f-4f33-a705-c246699abea5
+    password: cde935af-2aff-427a-b10f-bc84ace7ab4f
     udp: true
   - name: 香港02专线
     type: ss
     server: zf-ct.bgblwow.org
     port: 12580
     cipher: chacha20-ietf-poly1305
-    password: 20789ae4-816f-4f33-a705-c246699abea5
+    password: cde935af-2aff-427a-b10f-bc84ace7ab4f
     udp: true
   - name: 美国01
     type: ss
     server: gya.tangu.win
     port: 15532
     cipher: chacha20-ietf-poly1305
-    password: 20789ae4-816f-4f33-a705-c246699abea5
+    password: cde935af-2aff-427a-b10f-bc84ace7ab4f
     udp: true
   - name: 台湾01专线
     type: ss
     server: zf-ct.bgblwow.org
     port: 14632
     cipher: chacha20-ietf-poly1305
-    password: 20789ae4-816f-4f33-a705-c246699abea5
+    password: cde935af-2aff-427a-b10f-bc84ace7ab4f
     udp: true
   - name: 英国01
     type: ss
     server: gya.tangu.win
     port: 15935
     cipher: chacha20-ietf-poly1305
-    password: 20789ae4-816f-4f33-a705-c246699abea5
+    password: cde935af-2aff-427a-b10f-bc84ace7ab4f
     udp: true
   - name: 香港04
     type: ss
     server: gya.tangu.win
     port: 15635
     cipher: chacha20-ietf-poly1305
-    password: 20789ae4-816f-4f33-a705-c246699abea5
+    password: cde935af-2aff-427a-b10f-bc84ace7ab4f
     udp: true
   - name: 新加坡01
     type: ss
     server: gya.tangu.win
     port: 15636
     cipher: chacha20-ietf-poly1305
-    password: 20789ae4-816f-4f33-a705-c246699abea5
+    password: cde935af-2aff-427a-b10f-bc84ace7ab4f
     udp: true
   - name: 新加坡02
     type: ss
     server: gya.tangu.win
     port: 15637
     cipher: chacha20-ietf-poly1305
-    password: 20789ae4-816f-4f33-a705-c246699abea5
+    password: cde935af-2aff-427a-b10f-bc84ace7ab4f
     udp: true
   - name: 香港04-备用
     type: ss
     server: qqa813.198139.xyz
     port: 26642
     cipher: chacha20-ietf-poly1305
-    password: 20789ae4-816f-4f33-a705-c246699abea5
+    password: cde935af-2aff-427a-b10f-bc84ace7ab4f
     udp: true
   - name: 香港05-备用
     type: ss
     server: qqa813.198139.xyz
     port: 26653
     cipher: chacha20-ietf-poly1305
-    password: 20789ae4-816f-4f33-a705-c246699abea5
+    password: cde935af-2aff-427a-b10f-bc84ace7ab4f
     udp: true
   - name: 香港06-备用
     type: ss
     server: qqa813.198139.xyz
     port: 25360
     cipher: chacha20-ietf-poly1305
-    password: 20789ae4-816f-4f33-a705-c246699abea5
+    password: cde935af-2aff-427a-b10f-bc84ace7ab4f
     udp: true
   - name: 越南01
     type: ss
     server: gya.tangu.win
     port: 15642
     cipher: chacha20-ietf-poly1305
-    password: 20789ae4-816f-4f33-a705-c246699abea5
+    password: cde935af-2aff-427a-b10f-bc84ace7ab4f
     udp: true
   - name: 美国04
     type: ss
     server: gya.tangu.win
     port: 15728
     cipher: chacha20-ietf-poly1305
-    password: 20789ae4-816f-4f33-a705-c246699abea5
+    password: cde935af-2aff-427a-b10f-bc84ace7ab4f
     udp: true
   - name: 日本01
     type: ss
     server: gya.tangu.win
     port: 15736
     cipher: chacha20-ietf-poly1305
-    password: 20789ae4-816f-4f33-a705-c246699abea5
+    password: cde935af-2aff-427a-b10f-bc84ace7ab4f
     udp: true
   - name: 柬埔寨01
     type: ss
     server: gya.tangu.win
     port: 19741
     cipher: chacha20-ietf-poly1305
-    password: 20789ae4-816f-4f33-a705-c246699abea5
+    password: cde935af-2aff-427a-b10f-bc84ace7ab4f
     udp: true
   - name: 台湾02专线
     type: ss
     server: zf-ct.bgblwow.org
     port: 16621
     cipher: chacha20-ietf-poly1305
-    password: 20789ae4-816f-4f33-a705-c246699abea5
+    password: cde935af-2aff-427a-b10f-bc84ace7ab4f
     udp: true
   - name: 台湾03-备用
     type: ss
     server: qqa813.198139.xyz
     port: 11138
     cipher: chacha20-ietf-poly1305
-    password: 20789ae4-816f-4f33-a705-c246699abea5
+    password: cde935af-2aff-427a-b10f-bc84ace7ab4f
     udp: true
   - name: 台湾04-备用
     type: ss
     server: qqa813.198139.xyz
     port: 11148
     cipher: chacha20-ietf-poly1305
-    password: 20789ae4-816f-4f33-a705-c246699abea5
+    password: cde935af-2aff-427a-b10f-bc84ace7ab4f
     udp: true
 proxy-groups:
   - name: PROXY
