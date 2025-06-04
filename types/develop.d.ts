@@ -1,23 +1,22 @@
-declare namespace ClashNode {
-  type Option = Record<string, any>
+type Option = Record<string, any>
 
-  type ProxyNode = {
-    name: string
-    type: string
-    server: string
-    port: number
-    cipher: string
-    password: string
-    udp: boolean
-  } & Option
+type ProxyNode = {
+  name: string
+  type: string
+  server: string
+  port: number
+  cipher: string
+  password: string
+  udp: boolean
+} & Option
 
-  type ProxyNodeArray = ProxyNode[]
+type ProxyNodes = ProxyNode[]
 
-  type UseGenerateOption = Record<string, ProxyNodeArray>
+type UseGenerateOption = Record<string, ProxyNodes>
 
-  type UseSpiderOption = {
-    base64url: string
-    selector: [string, string]
-    pattern: RegExp
-  }
-}
+type UseSpiderOption = {
+  base64url: string
+} & (
+  | { selector: [string, string]; pattern: RegExp }
+  | { selector?: never; pattern?: never }
+)

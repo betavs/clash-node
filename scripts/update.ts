@@ -1,30 +1,23 @@
 import chalk from 'chalk'
 import useGenerate from '../hooks/use-generate.ts'
 import useReadme from '../hooks/use-readme.ts'
-import config from './config.ts'
+import useSpider from '../hooks/use-spider.ts'
+import clash from './clash.ts'
 
-import { readdirSync } from 'node:fs'
+const useGenerateOption: UseGenerateOption = {}
 
-let option = {}
-
-const names = readdirSync('scripts').filter(config.predicate)
-
-for (const name of names) {
-  let data = {}
-
+for (const key in clash) {
   try {
-    data = (await import(`./${name}`)).default
+    useGenerateOption[`clash-${key}`] = await useSpider(clash[key])
   } catch {
     const message = chalk.redBright.italic.underline(
-      `\nAn error occurred when executing script file ${name}`
+      `\nAn error occurred while executing ${key} configuration`
     )
 
     console.log(message)
   }
-
-  option = { ...option, ...data }
 }
 
-useGenerate(option)
+useGenerate(useGenerateOption)
 
 useReadme()

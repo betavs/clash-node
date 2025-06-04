@@ -7,24 +7,21 @@ const json = JSON.parse(content)
 const { name, author, description, homepage } = json
 
 const pattern = {
-  clash: /^clash-[\w-]+\.(ts|yaml)$/,
+  clash: /^clash-[\w-]+\.(yaml)$/,
 
   link: /^http(s)?:/,
 
+  yaml: /\.yaml$/,
+
   root: /^\//,
 
-  decode: /^(\w+):\/\/(\w+)@([\w\.-]+):(\d+)#(.+)$/,
-
-  filename: /([^/\\]+)(?=\.\w+$)/
+  decode: /^(\w+):\/\/(\w+)@([\w\.-]+):(\d+)#(.+)$/
 }
 
-const config = {
+export default {
   name,
   author,
   pattern,
   homepage,
-  description,
-  predicate: (str: string) => pattern.clash.test(str)
+  description
 }
-
-export default config
