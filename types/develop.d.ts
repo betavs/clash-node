@@ -14,9 +14,19 @@ type ProxyNodes = ProxyNode[]
 
 type UseGenerateOption = Record<string, ProxyNodes>
 
-type UseSpiderOption = {
-  base64url: string
-} & (
-  | { selector: [string, string]; pattern: RegExp }
-  | { selector?: never; pattern?: never }
-)
+type UseSpiderOption =
+  | {
+      base64url: string
+      selector: [string, string]
+      pattern: RegExp
+    }
+  | {
+      base64url: string
+      selector?: never
+      pattern?: never
+    }
+  | {
+      base64url: string
+      selector?: never
+      pattern: RegExp
+    }

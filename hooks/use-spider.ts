@@ -23,26 +23,34 @@ const useRenderClashNode = async ({
   base64url,
   selector,
   pattern
-}: Required<UseSpiderOption>) => {
-  const [home, detail] = selector
+}: UseSpiderOption) => {
+  let url = base64url
 
   let $ = await useRender(base64url)
 
-  let href = $(home).eq(0).attr('href') ?? ''
+  if (selector) {
+    url = $(selector[0]).eq(0).attr('href') ?? ''
 
-  if (!isLink(href)) {
-    href = `${base64url}${href.replace(config.pattern.root, '')}`
+    if (!isLink(url)) {
+      url = `${base64url}${url}`
+    }
   }
 
-  $ = await useRender(href)
+  $ = await useRender(url)
 
-  const text = $(detail).text()
+  const text = $(selector?.[1] ?? '*').text()
 
-  const list = text.split('\n').map((item) => item.trim())
+  const data = text.match(pattern!)!
 
-  const data = list.filter((item) => pattern.test(item))
+  url = useRandom(data)
 
-  return useRandom(data)
+  if (config.pattern.github.test(url)) {
+    url = url.replace(config.pattern.github, (_match, $1) => {
+      return `https://raw.githubusercontent.com/${$1}/${$1}.github.io/refs/heads/main`
+    })
+  }
+
+  return url
 }
 
 const useSpider = async (option: UseSpiderOption) => {
@@ -52,11 +60,16 @@ const useSpider = async (option: UseSpiderOption) => {
   base64url = isLink(base64url) ? base64url : useDecodeBase64url(base64url)
 
   if (
-    Array.isArray(selector) &&
-    selector.length === 2 &&
+    (Array.isArray(selector) &&
+      selector.length === 2 &&
+      pattern instanceof RegExp) ||
     pattern instanceof RegExp
   ) {
-    base64url = await useRenderClashNode({ base64url, selector, pattern })
+    base64url = await useRenderClashNode({
+      base64url,
+      selector,
+      pattern
+    })
   }
 
   const resp = await useRender(base64url)
