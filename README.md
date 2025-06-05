@@ -2,7 +2,7 @@
 
 A nodejs script that automatically gets the clash subscription address and updates the clash config file.
 
-> Updated on Thu, 05 Jun 2025 02:23:05 GMT
+> Updated on Thu, 05 Jun 2025 03:34:46 GMT
 
 | No. | Subscribe Link |
 | :---: | :-----: |
