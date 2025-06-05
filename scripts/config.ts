@@ -9,13 +9,13 @@ const { name, author, description, homepage } = json
 const pattern = {
   clash: /^clash-[\w-]+\.(yaml)$/,
 
-  link: /^http(s)?:/,
+  link: /^http(s)?:\/\//,
 
   yaml: /\.yaml$/,
 
-  root: /^\//,
+  decode: /^(\w+):\/\/(\w+)@([\w\.-]+):(\d+)#(.+)$/,
 
-  decode: /^(\w+):\/\/(\w+)@([\w\.-]+):(\d+)#(.+)$/
+  github: /^https:\/\/([\w-]+)\.github.io/
 }
 
 export default {
