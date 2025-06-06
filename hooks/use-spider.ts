@@ -26,6 +26,8 @@ const useRenderClashNode = async ({
 }: UseSpiderOption) => {
   let url = base64url
 
+  const branch = url.match(config.pattern.branch)?.[1] ?? 'main'
+
   let $ = await useRender(base64url)
 
   if (selector) {
@@ -46,7 +48,7 @@ const useRenderClashNode = async ({
 
   if (config.pattern.github.test(url)) {
     url = url.replace(config.pattern.github, (_match, $1) => {
-      return `https://raw.githubusercontent.com/${$1}/${$1}.github.io/refs/heads/main`
+      return `https://raw.githubusercontent.com/${$1}/${$1}.github.io/refs/heads/${branch}`
     })
   }
 

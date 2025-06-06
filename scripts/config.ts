@@ -15,7 +15,9 @@ const pattern = {
 
   decode: /^(\w+):\/\/(\w+)@([\w\.-]+):(\d+)#(.+)$/,
 
-  github: /^https:\/\/([\w-]+)\.github.io/
+  github: /^https:\/\/([\w-]+)\.github\.io/,
+
+  branch: /[\w-]+\.github\.io\/refs\/heads\/([^\/]+)\//
 }
 
 export default {
