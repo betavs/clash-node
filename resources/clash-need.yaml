@@ -17,7 +17,7 @@ dns:
     - tls://dns.google:853
 proxies:
   - name: tg频道:@freenodedaily
-    server: 52.221.229.127
+    server: 18.143.171.45
     port: 443
     client-fingerprint: chrome
     type: ss
@@ -25,29 +25,37 @@ proxies:
     password: qawszxc123
     tfo: false
   - name: 🇭🇰 香港
-    server: vhs.88443.cf
-    port: 18000
+    server: 8tv68qhq.slashdevslashnetslashtun.net
+    port: 15003
     client-fingerprint: chrome
-    type: trojan
-    password: 63099
-    sni: vhs.88443.cf
-    skip-cert-verify: false
+    type: ss
+    cipher: aes-256-gcm
+    password: 4KGHWKCKQAJOVPHO
+    tfo: false
   - name: 🇭🇰 香港2
-    server: hkkh11v1.xpmc.cc
-    port: 56804
+    server: 121.127.231.217
+    port: 17161
     client-fingerprint: chrome
     type: ss
     cipher: chacha20-ietf-poly1305
-    password: 91a41f4e02dc
+    password: 1450cecfb93f
     tfo: false
     plugin: v2ray-plugin
     plugin-opts:
       mode: websocket
-      host: hkkh11v1.xpmc.cc
-      path: /utvbnrzejpmt
+      host: kh36v1.pmxiaonan.xyz
+      path: /simieepvt
       tls: true
       mux: true
       skip-cert-verify: false
+  - name: 🇭🇰 香港4
+    server: usla.mjt000.com
+    port: 443
+    client-fingerprint: chrome
+    type: trojan
+    password: e4af2638-bb12-4e4a-84f1-a032e23ca63f
+    sni: usla.mjt000.com
+    skip-cert-verify: false
   - name: 🇭🇰 香港3
     server: 183.236.51.38
     port: 49302
@@ -58,14 +66,6 @@ proxies:
     cipher: auto
     tls: false
     tfo: false
-    skip-cert-verify: false
-  - name: 🇭🇰 香港4
-    server: usla.mjt000.com
-    port: 443
-    client-fingerprint: chrome
-    type: trojan
-    password: e4af2638-bb12-4e4a-84f1-a032e23ca63f
-    sni: usla.mjt000.com
     skip-cert-verify: false
   - name: 🇭🇰 香港5
     server: 183.236.51.38
@@ -78,14 +78,6 @@ proxies:
     tls: false
     tfo: false
     skip-cert-verify: false
-  - name: 🇭🇰 香港6
-    server: ti3hyra4.slashdevslashnetslashtun.net
-    port: 15016
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-gcm
-    password: GUSA917ZCX1WAKMT
-    tfo: false
   - name: 🇭🇰 香港7
     server: v9.heduian.link
     port: 30809
@@ -113,18 +105,17 @@ proxies:
     tls: false
     tfo: false
     skip-cert-verify: false
-  - name: 🇹🇼 台湾
-    server: 60.249.35.38
-    port: 2377
+  - name: 🇭🇰 香港6
+    server: 38.147.188.236
+    port: 49131
     client-fingerprint: chrome
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    type: vmess
+    uuid: beca03de-218f-4c6c-8e63-b4ccac456fa4
+    alterId: 0
+    cipher: auto
+    tls: false
     tfo: false
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: 09499c8:182394
+    skip-cert-verify: false
   - name: 🇯🇵 日本
     server: cn01.efan8867801.xyz
     port: 8766
@@ -136,10 +127,10 @@ proxies:
     plugin: obfs
     plugin-opts:
       mode: http
-      host: 202505282364048-WX78G4MFft.download.microsoft.com
+      host: 202505282364048-k4BSs9rOoW.download.microsoft.com
   - name: 🇯🇵 日本2
     server: 43.226.17.11
-    port: 37989
+    port: 43361
     client-fingerprint: chrome
     type: ss
     cipher: chacha20-ietf-poly1305
@@ -155,20 +146,24 @@ proxies:
       skip-cert-verify: false
   - name: 🇯🇵 日本3
     server: ti3hyra4.slashdevslashnetslashtun.net
-    port: 18008
+    port: 18006
     client-fingerprint: chrome
     type: ss
     cipher: aes-256-gcm
-    password: 6EZ5QKFX60AVSUYT
+    password: 4VWFR9NJLC1NGM7Q
     tfo: false
   - name: 🇯🇵 日本4
-    server: ti3hyra4.slashdevslashnetslashtun.net
-    port: 18008
+    server: 221.215.48.116
+    port: 2377
     client-fingerprint: chrome
     type: ss
-    cipher: aes-256-gcm
-    password: 6EZ5QKFX60AVSUYT
+    cipher: chacha20-ietf-poly1305
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
     tfo: false
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: (TG @WangCai2)aa1c23d:49858
   - name: 🇸🇬 新加坡
     server: v12.heduian.link
     port: 30812
@@ -231,6 +226,14 @@ proxies:
     cipher: aes-256-cfb
     password: qwerREWQ@@
     tfo: false
+  - name: 🇸🇬 新加坡6
+    server: 204bdce4-sxaf40-t5bgb3-l4nv.cm5.cnkuaishou.com
+    port: 27231
+    client-fingerprint: chrome
+    type: trojan
+    password: 1469e09e-027c-11ec-a0fc-f23c913c8d2b
+    sni: 204bdce4-sxaf40-t5bgb3-l4nv.cm5.cnkuaishou.com
+    skip-cert-verify: false
   - name: 🇰🇷 韩国2
     server: p080.panda001.net
     port: 36379
@@ -238,14 +241,6 @@ proxies:
     type: ss
     cipher: aes-256-cfb
     password: qwerREWQ@@
-    tfo: false
-  - name: 🇰🇷 韩国3
-    server: 3.36.123.246
-    port: 9898
-    client-fingerprint: chrome
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 1a17b19d-4896-4531-af79-6e91d8ef8228
     tfo: false
   - name: 🇺🇸 美国2
     server: cn01.efan8867801.xyz
@@ -258,7 +253,7 @@ proxies:
     plugin: obfs
     plugin-opts:
       mode: http
-      host: 202505282364048-WX78G4MFft.download.microsoft.com
+      host: 202505282364048-k4BSs9rOoW.download.microsoft.com
   - name: 🇺🇸 美国
     server: v32.heduian.link
     port: 30832
@@ -324,6 +319,25 @@ proxies:
       path: /oooo
       headers:
         Host: ocbc.com
+  - name: 🇨🇭 瑞士
+    server: 15002.kuaiyin02.top
+    port: 15002
+    client-fingerprint: chrome
+    type: vmess
+    uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
+    alterId: 0
+    cipher: auto
+    tls: false
+    tfo: false
+    skip-cert-verify: false
+  - name: 🇺🇦 乌克兰
+    server: f8cwp-g04.ua01-ae5.entry.v50307shvkaa.art
+    port: 20072
+    client-fingerprint: chrome
+    type: ss
+    cipher: aes-256-gcm
+    password: 6a828f44-0434-3bd4-aca5-a90b696a910c
+    tfo: false
 proxy-groups:
   - name: PROXY
     type: select
@@ -332,13 +346,12 @@ proxy-groups:
       - tg频道:@freenodedaily
       - 🇭🇰 香港
       - 🇭🇰 香港2
-      - 🇭🇰 香港3
       - 🇭🇰 香港4
+      - 🇭🇰 香港3
       - 🇭🇰 香港5
-      - 🇭🇰 香港6
       - 🇭🇰 香港7
       - 🇭🇰 香港8
-      - 🇹🇼 台湾
+      - 🇭🇰 香港6
       - 🇯🇵 日本
       - 🇯🇵 日本2
       - 🇯🇵 日本3
@@ -349,13 +362,15 @@ proxy-groups:
       - 🇸🇬 新加坡4
       - 🇸🇬 新加坡5
       - 🇰🇷 韩国
+      - 🇸🇬 新加坡6
       - 🇰🇷 韩国2
-      - 🇰🇷 韩国3
       - 🇺🇸 美国2
       - 🇺🇸 美国
       - 🇺🇸 美国3
       - 🇺🇸 美国4
       - 🇺🇸 美国5
+      - 🇨🇭 瑞士
+      - 🇺🇦 乌克兰
   - name: CLASH
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -363,13 +378,12 @@ proxy-groups:
       - tg频道:@freenodedaily
       - 🇭🇰 香港
       - 🇭🇰 香港2
-      - 🇭🇰 香港3
       - 🇭🇰 香港4
+      - 🇭🇰 香港3
       - 🇭🇰 香港5
-      - 🇭🇰 香港6
       - 🇭🇰 香港7
       - 🇭🇰 香港8
-      - 🇹🇼 台湾
+      - 🇭🇰 香港6
       - 🇯🇵 日本
       - 🇯🇵 日本2
       - 🇯🇵 日本3
@@ -380,13 +394,15 @@ proxy-groups:
       - 🇸🇬 新加坡4
       - 🇸🇬 新加坡5
       - 🇰🇷 韩国
+      - 🇸🇬 新加坡6
       - 🇰🇷 韩国2
-      - 🇰🇷 韩国3
       - 🇺🇸 美国2
       - 🇺🇸 美国
       - 🇺🇸 美国3
       - 🇺🇸 美国4
       - 🇺🇸 美国5
+      - 🇨🇭 瑞士
+      - 🇺🇦 乌克兰
     interval: 300
     tolerance: 50
 rules:
