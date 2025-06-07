@@ -13,11 +13,11 @@ const pattern = {
 
   yaml: /\.yaml$/,
 
-  decode: /^(\w+):\/\/(\w+)@([\w\.-]+):(\d+)#(.+)$/,
+  decode: /^(\w+):\/\/(\w+)@([\w.-]+):(\d+)#(.+)$/,
 
   github: /^https:\/\/([\w-]+)\.github\.io/,
 
-  branch: /[\w-]+\.github\.io\/refs\/heads\/([^\/]+)\//
+  branch: /[\w-]+\.github\.io\/refs\/heads\/([^/]+)\//
 }
 
 export default {

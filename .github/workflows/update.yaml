@@ -2,8 +2,7 @@ name: Update Clash Node
 
 on:
   schedule:
-    - cron: '*/30 0-1 * * *'
-    - cron: '10 2,4,12 * * *'
+    - cron: '10 0-2,4 * * *'
   workflow_dispatch:
 
 jobs:
