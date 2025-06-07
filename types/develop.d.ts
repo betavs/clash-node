@@ -1,4 +1,4 @@
-type Option = Record<string, any>
+type Option = Record<string, unknown>
 
 type ProxyNode = {
   name: string
